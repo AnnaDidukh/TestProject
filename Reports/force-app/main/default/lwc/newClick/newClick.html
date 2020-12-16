@@ -1,0 +1,27 @@
+<template>
+    <lightning-record-edit-form object-api-name="Customer_Report__c" onsuccess={handleSuccess}>
+        <div class="slds-container--center slds-container--large custom-background">
+        <lightning-messages></lightning-messages>
+        <div class="slds-m-around_medium">
+            <lightning-input-field field-name='Id' value={accountId} required></lightning-input-field>
+            <lightning-input-field field-name='Code__c' required></lightning-input-field>
+            <lightning-input-field field-name='Customer_Report__c' required></lightning-input-field>
+            <lightning-input-field field-name='Account__c' required></lightning-input-field>
+            <lightning-input-field field-name='Data_Source__c' required></lightning-input-field>
+            <lightning-input-field field-name='External_Id__c' required></lightning-input-field>
+            <lightning-input-field field-name='Frequency__c' required></lightning-input-field>
+            <lightning-input-field field-name='FTP__c' required></lightning-input-field>
+            <lightning-input-field field-name='ICO__c' required></lightning-input-field>
+            <lightning-input-field field-name='Note__c' required></lightning-input-field>
+            <lightning-input-field field-name='Parcel__c' required></lightning-input-field>
+            <lightning-input-field field-name='Schedule__c' required></lightning-input-field>
+            <lightning-input-field field-name='Template__c' required></lightning-input-field>
+            <lightning-input-field field-name='Title__c' required></lightning-input-field>
+            <div class="slds-m-top_medium">
+                <lightning-button variant="brand" type="submit" name="save" label="Create Report">
+                </lightning-button>
+           </div>
+       </div>
+    </div>
+    </lightning-record-edit-form>
+</template>

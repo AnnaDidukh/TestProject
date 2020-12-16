@@ -1,0 +1,20 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId,lightning:actionOverride" access="global" > 
+    <lightning:recordEditForm objectApiName="Customer_Report__c" onsuccess="{!c.handleSuccess}">
+        <lightning:messages />
+        <!-- <lightning:inputField field-name='Id' value="{!v.accountId}" required="true"/> -->
+        <lightning:inputField fieldName='Customer_Report__c' required="true"/>
+        <lightning:inputField fieldName='Code__c' required="true"/>
+        <lightning:inputField fieldName='Account__c' required="true"/>
+        <lightning:inputField fieldName='Data_Source__c' required="true"/>
+        <lightning:inputField fieldName='External_Id__c' required="true"/>
+        <lightning:inputField fieldName='Frequency__c' required="true"/>
+        <lightning:inputField fieldName='FTP__c' required="true"/>
+        <lightning:inputField fieldName='ICO__c' required="true"/>
+        <lightning:inputField fieldName='Parcel__c' required="true"/>
+        <lightning:inputField fieldName='Schedule__c' required="true"/>
+        <lightning:inputField fieldName='Template__c' required="true"/>
+        <lightning:inputField fieldName='Title__c' required="true"/>
+        <lightning:button variant="brand" type="submit" name="save" label="Create Report"  />
+
+    </lightning:recordEditForm>
+</aura:component>
