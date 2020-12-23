@@ -4,19 +4,19 @@
         <lightning-messages></lightning-messages>
         <div class="slds-m-around_medium">
             <lightning-input-field field-name='Id' value={accountId} required></lightning-input-field>
-            <lightning-input-field field-name='Code__c' required></lightning-input-field>
-            <lightning-input-field field-name='Customer_Report__c' required></lightning-input-field>
-            <lightning-input-field field-name='Account__c' required></lightning-input-field>
-            <lightning-input-field field-name='Data_Source__c' required></lightning-input-field>
-            <lightning-input-field field-name='External_Id__c' required></lightning-input-field>
-            <lightning-input-field field-name='Frequency__c' required></lightning-input-field>
-            <lightning-input-field field-name='FTP__c' required></lightning-input-field>
-            <lightning-input-field field-name='ICO__c' required></lightning-input-field>
-            <lightning-input-field field-name='Note__c' required></lightning-input-field>
-            <lightning-input-field field-name='Parcel__c' required></lightning-input-field>
-            <lightning-input-field field-name='Schedule__c' required></lightning-input-field>
-            <lightning-input-field field-name='Template__c' required></lightning-input-field>
-            <lightning-input-field field-name='Title__c' required></lightning-input-field>
+            <lightning-input-field field-name='Code__c' required value='code'></lightning-input-field>
+            <lightning-input-field field-name='Customer_Report__c' required onchange={handleUpdate} value='customerReport'></lightning-input-field>
+            <lightning-input-field field-name='Account__c' required value='account'></lightning-input-field>
+            <lightning-input-field field-name='Data_Source__c' required value='dataSource'></lightning-input-field>
+            <lightning-input-field field-name='External_Id__c' required value='id'></lightning-input-field>
+            <lightning-input-field field-name='Frequency__c' required value='frequency'></lightning-input-field>
+            <lightning-input-field field-name='FTP__c' required value='isFTC'></lightning-input-field>
+            <lightning-input-field field-name='ICO__c' required value='ico'></lightning-input-field>
+            <lightning-input-field field-name='Note__c' required value='note'></lightning-input-field>
+            <lightning-input-field field-name='Parcel__c' required value='isParcel'></lightning-input-field>
+            <lightning-input-field field-name='Schedule__c' required value='schedule'></lightning-input-field>
+            <lightning-input-field field-name='Template__c' required value='template'></lightning-input-field>
+            <lightning-input-field field-name='Title__c' required value='title'></lightning-input-field>
             <div class="slds-m-top_medium">
                 <lightning-button variant="brand" type="submit" name="save" label="Create Report">
                 </lightning-button>
